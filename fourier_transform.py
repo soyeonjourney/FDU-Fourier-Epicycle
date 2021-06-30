@@ -1,5 +1,5 @@
 import numpy as np
-from utils import r2c, coeffs_mydft, coeffs_myfft, coeffs_myfft_plus, coeffs_fft
+from utils import real2complex, coeffs_mydft, coeffs_myfft, coeffs_myfft_plus, coeffs_fft
 
 
 class FourierTransform:
@@ -29,7 +29,7 @@ class FourierTransform:
         self.y_array[0], self.y_array[-1] = y_avrg, y_avrg
 
         # 2-D coordinate to 1-D complex number
-        self.f_array = r2c(self.x_array, self.y_array)
+        self.f_array = real2complex(self.x_array, self.y_array)
 
         # Compute coeffs with different methods
         if self.mode == 'fft':
