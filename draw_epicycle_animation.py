@@ -61,7 +61,7 @@ drawing, = ax.plot([], [], '-', color='plum', linewidth=2)
 
 # Generate animation
 print("Generating animation ...")
-frames = 3000
+frames = 300
 pbar = tqdm(total=frames, desc='Progress')  # Progress bar
 
 # Draw frame at time t (t goes from 0 to 2*pi for complete cycle)
