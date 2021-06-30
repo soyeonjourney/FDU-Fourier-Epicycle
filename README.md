@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 <h1 align = "center">Fourier Epicycle</h1>
 
 
@@ -66,8 +68,11 @@ pip install -r requirements.txt
    * `Fourier Transform type` <string>:
 
      * `fft` : Use built-in FFT
+   
      * `mydft `: Use DFT
+   
      * `myfft` : Use linear interpolation & power-2 FFT
+   
      * `myfftplus` : Use cubic interpolation & power-2 FFT
 
    * `Save file type` <string>: Generate mp4 or gif file, mp4 is recommended
@@ -136,27 +141,37 @@ pip install -r requirements.txt
 ## Code Structure
 
 * `draw_it_yourself.py` : Drawing window implemented by pygame
+
 * `utils.py` : Basic algorithms, including:
 
   * `coeffs_mydft` : Calculate Fourier Transform parameters by DFT
+
   * `coeffs_myfft` : Calculate Fourier Transform parameters by power-2 FFT with linear interpolation
+
   * `coeffs_myfft_plus` : Calculate Fourier Transform parameters by power-2 FFT with periodic cubic spline interpolation
+
   * `coeffs_fft` : Calculate Fourier Transform parameters by built-in FFT function
+
 * `fourier_transform.py` : Return all coefficients of Fourier Transform
+
 * `epicycle_frame.py` : Return all epicycle's track at frame time t
+
 * `draw_epicycle_animation.py` : Main function to generate the animation
 
 
 
 ## Examples
 
-
+<
 
 
 
 ## Further Reading
 
 1. [Fourier series videos by 3B1B](https://www.youtube.com/watch?v=r6sGWTCMz2k) my motivation for this project
+
 2. [Fourier Transform videos by 3B1B](https://www.youtube.com/watch?v=spUNpyF58BY) beautiful understanding on Fourier Transform
+
 3. [An Interactive Introduction to Fourier Transforms](https://www.jezzamon.com/fourier/index.html) helps a lot
+
 
