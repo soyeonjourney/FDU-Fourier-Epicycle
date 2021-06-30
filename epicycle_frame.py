@@ -2,7 +2,7 @@ import numpy as np
 
 
 class EpicycleFrame:
-    """Compute all epicycles' tracks at frame time t."""
+    """Compute all epicycle's track at frame time t."""
     def __init__(self, ft, t):
         """
         :params:
