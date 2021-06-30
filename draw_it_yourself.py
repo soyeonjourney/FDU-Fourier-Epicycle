@@ -3,7 +3,7 @@ import pygame
 
 def draw_it_yourself():
     pygame.init()
-    screen = pygame.display.set_mode((512, 512))
+    screen = pygame.display.set_mode((720, 720))
     flag = True
 
     coords = []
@@ -24,7 +24,7 @@ def draw_it_yourself():
                 pygame.display.flip()
 
             elif event.type == pygame.KEYDOWN and pygame.key.get_pressed()[pygame.K_RETURN]:
-                f =  open('input/coords', 'w')
+                f = open('input/coords', 'w')
                 json.dump(coords, f)
                 print(f"Save {len(coords)} coords successfully.")
                 f.close()
