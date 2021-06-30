@@ -168,7 +168,7 @@ pip install -r requirements.txt
 
 ## Examples
 
-![example](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/example/fourier-epicycle.gif)
+https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/example/fourier-epicycle.mp4
 
 
 
