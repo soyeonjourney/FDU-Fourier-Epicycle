@@ -57,8 +57,8 @@ def coeffs_fft(x, order):
     return coeffs
 
 
-# Real number convert to complex number
-def r2c(x, y):
+# Real coordinates convert to complex number
+def real2complex(x, y):
     """return: x + y * j"""
     x, y = np.asarray(x), np.asarray(y)
     return x + 1j * y
@@ -106,7 +106,7 @@ def lin_interp(x, xp, fp):
 
 # Periodic cubic spline interpolation
 def cubic_spline_prd(x, xp, fp):
-    """Periodic cubic spline interpolation by MATLAB scripts."""
+    """Periodic cubic spline interpolation."""
     # To be done
     pass
 
