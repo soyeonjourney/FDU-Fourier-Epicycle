@@ -18,6 +18,16 @@
 
 This project is a Fourier Epicycle generator based on numerical algorithms like Fourier Transform, interpolation, etc.
 
+Drawing with time-axis is visualized as follows.
+
+<img src="https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/intro-1.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/intro-2.jpg" width="200">
+
+And Fourier Transform parameter `order` ( ~ number of epicycles ) controls the precision of drawing.
+
+<img src="https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/intro-3.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/intro-4.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/intro-5.jpg" width="200">
+
+( More in [Further Reading](#further-reading) )
+
 
 
 ## Prerequisites
@@ -158,7 +168,7 @@ pip install -r requirements.txt
 
 ## Examples
 
-<
+![example](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/example/fourier-epicycle.gif)
 
 
 
