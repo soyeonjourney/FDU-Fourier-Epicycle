@@ -1,0 +1,5 @@
+numpy==1.20.1
+scipy==1.6.2
+pygame==2.0.1
+matplotlib==3.3.4
+tqdm==4.59.0
