@@ -20,11 +20,11 @@ This project is a Fourier Epicycle generator based on numerical algorithms like 
 
 Drawing with time-axis is visualized as follows.
 
-<img src="https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/intro-1.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/intro-2.jpg" width="200">
+<img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-1.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-2.jpg" width="200">
 
 And Fourier Transform parameter `order` ( ~ number of epicycles ) controls the precision of drawing.
 
-<img src="https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/intro-3.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/intro-4.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/intro-5.jpg" width="200">
+<img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-3.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-4.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-5.jpg" width="200">
 
 ( More in [Further Reading](#further-reading) )
 
@@ -101,15 +101,15 @@ pip install -r requirements.txt
 
 * #### Fourier Series
 
-  The definitions are as follows, in general, integer ![k](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/k.png) is theoretically infinite.
+  The definitions are as follows, in general, integer ![k](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/k.png) is theoretically infinite.
   
-  ![equation-1](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/equation-1.png)
+  ![equation-1](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/equation-1.png)
   
-  Integer ![j](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/j.png), used as an index, is also the number of cycles of the ![j](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/j.png)-th exponential term in interval ![I](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/I.png), and the parameter ![a_j](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/a_j.png) could be calculated by
+  Integer ![j](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/j.png), used as an index, is also the number of cycles of the ![j](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/j.png)-th exponential term in interval ![I](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/I.png), and the parameter ![a_j](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/a_j.png) could be calculated by
   
-  ![equation-2](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/equation-2.png)
+  ![equation-2](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/equation-2.png)
   
-  ( In this project, we set  ![tinI](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/tinI.png) )
+  ( In this project, we set  ![tinI](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/tinI.png) )
 
   By this, we can decompose a periodic function into the sum of exponential terms, and thus implementing FFT helps constructing code.
 
@@ -119,28 +119,28 @@ pip install -r requirements.txt
 
   Fourier transform is a mathematical transform that decomposes functions depending on time into functions depending on temporal frequency, such as the expression of a musical chord in terms of the volumes and frequencies of its constituent notes.
 
-  When ![f(t)](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/f(t).png) is a complex valued periodic function of real variable t (stands for time), we can implementing the Discrete/Fast Fourier Transform on it, ![f](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/f.png) will be an array of complex numbers, where ![f(t)](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/f(t).png) corresponds to the complex number information at time t, and ![f(t)](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/f(t).png) can also be interpreted as the point of the drawing at time t, as for why (how to represent a 2-D image information with one complex number), we'll show it soon.
+  When ![f(t)](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/f(t).png) is a complex valued periodic function of real variable t (stands for time), we can implementing the Discrete/Fast Fourier Transform on it, ![f](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/f.png) will be an array of complex numbers, where ![f(t)](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/f(t).png) corresponds to the complex number information at time t, and ![f(t)](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/f(t).png) can also be interpreted as the point of the drawing at time t, as for why (how to represent a 2-D image information with one complex number), we'll show it soon.
 
-  Suppose ![f](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/f.png) array is ![farray](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/farray.png), ![N](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/N.png) is the number of the sampling points.
+  Suppose ![f](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/f.png) array is ![farray](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/farray.png), ![N](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/N.png) is the number of the sampling points.
   
-  ![equation-3](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/equation-3.png)
+  ![equation-3](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/equation-3.png)
   
   And Fourier Transform tells,
   
-  ![equation-4](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/equation-4.png)
+  ![equation-4](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/equation-4.png)
   
   
 * #### Interpolation
 
   DFT is easy to implement but not so efficient, while power-2 FFT is relatively efficient but limited, for it only works when the number of sampling points is power of two.
 
-  So how to solve this problem? Actually it's almost impossible to get ![N=2^n](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/N=2^n.png), we use interpolations, in this project, linear interpolation & periodic cubic spline interpolation are implemented, because the complex function ![f](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/f.png) is periodic and the distance between each two sampling points won't be so long.
+  So how to solve this problem? Actually it's almost impossible to get ![N=2^n](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/N=2^n.png), we use interpolations, in this project, linear interpolation & periodic cubic spline interpolation are implemented, because the complex function ![f](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/f.png) is periodic and the distance between each two sampling points won't be so long.
 
   
 
 * #### 2-D information
 
-  This is trivial, just converted 2-D coordinates ![(x,y)](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/(x,y).png) into one complex number like ![x+iy](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/static/x+iy.png).
+  This is trivial, just converted 2-D coordinates ![(x,y)](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/(x,y).png) into one complex number like ![x+iy](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/x+iy.png).
 
 
 
