@@ -23,10 +23,8 @@ class FourierTransform:
         self.y_array = np.asarray(y_list, dtype=float)
 
         # Sets the first and last points to their average
-        x_avrg = np.mean([self.x_array[0], self.x_array[-1]])
-        y_avrg = np.mean([self.y_array[0], self.y_array[-1]])
-        self.x_array[0], self.x_array[-1] = x_avrg, x_avrg
-        self.y_array[0], self.y_array[-1] = y_avrg, y_avrg
+        self.x_array = np.append(self.x_array, self.x_array[0])
+        self.y_array = np.append(self.y_array, self.y_array[0])
 
         # 2-D coordinate to 1-D complex number
         self.f_array = real2complex(self.x_array, self.y_array)
