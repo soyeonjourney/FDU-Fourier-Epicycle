@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib import animation
 import json
 from tqdm import tqdm
+from collections import deque
 
 from fourier_transform import FourierTransform
 from epicycle_frame import EpicycleFrame
@@ -21,7 +22,7 @@ ax.set_axis_off()
 ax.set_aspect('equal')  # To have symmetric axes
 
 # Load coords
-f = open('data/coords', 'r')
+f = open('input/coords', 'r')
 coords = json.load(f)
 f.close()
 
@@ -34,7 +35,7 @@ xlim = plt.xlim()
 ylim = plt.ylim()
 
 plt.show(block=False)
-plt.pause(3)
+plt.pause(2)
 plt.close()
 
 # Ask for settings
@@ -53,15 +54,16 @@ ax.set_axis_off()
 ax.set_aspect('equal')
 
 # Frame params
+frames = 300
 original_drawing, = ax.plot([], [], '-', color='mediumaquamarine', linewidth=0.5)
 circles = [ax.plot([], [], '-', color='pink', alpha=0.3, linewidth=0.75)[0] for i in range(-order, order+1)]
 lines = [ax.plot([], [], '-', color='mediumpurple', alpha=0.7, linewidth=0.75)[0] for i in range(-order, order+1)]
-paintbrush_x, paintbrush_y = [], []
+paintbrush_x = deque()
+paintbrush_y = deque()
 drawing, = ax.plot([], [], '-', color='plum', linewidth=2)
 
 # Generate animation
 print("Generating animation ...")
-frames = 300
 pbar = tqdm(total=frames, desc='Progress')  # Progress bar
 
 # Draw frame at time t (t goes from 0 to 2*pi for complete cycle)
@@ -81,13 +83,13 @@ def generate_frame(k, ft, t_list):
     # Draw paintbrush
     paintbrush_x.append(epicycle_frame.paintbrush[0])
     paintbrush_y.append(epicycle_frame.paintbrush[1])
-    drawing.set_data(paintbrush_x, paintbrush_y)
+    drawing.set_data(list(paintbrush_x), list(paintbrush_y))
 
     # Update progress bar
     pbar.update(1)
 
 # Generate mp4 / gif
-t_list = np.linspace(0, 2*np.pi, num=frames)
+t_list = np.linspace(0, 1, num=frames)
 anim = animation.FuncAnimation(fig, generate_frame, frames=frames, fargs=(ft, t_list), interval=1)
 
 # Set up formatting for the video file
