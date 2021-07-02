@@ -16,7 +16,7 @@
 
 ## Introduction
 
-This project is a Fourier Epicycle generator based on numerical algorithms like Fourier Transform, interpolation, etc.
+This project is a Fourier Epicycle generator based on numerical algorithms, i.e. Fourier Transform, interpolation, etc.
 
 Drawing with time-axis is visualized as follows.
 
