@@ -10,7 +10,7 @@
 * [Numerical Technique](#numerical-technique)
 * [Code Structure](#code-structure)
 * [Examples](#examples)
-* [Further Reading](#further-reading)
+* [Reference](#reference)
 
 
 
@@ -172,7 +172,7 @@ pip install -r requirements.txt
 
 
 
-## Further Reading
+## Reference
 
 1. [Fourier series videos by 3B1B](https://www.youtube.com/watch?v=r6sGWTCMz2k) my motivation for this project
 
