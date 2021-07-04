@@ -26,7 +26,7 @@ And Fourier Transform parameter `order` ( ~ number of epicycles ) controls the p
 
 <img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-3.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-4.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-5.jpg" width="200">
 
-( More in [Further Reading](#further-reading) )
+( More in [Reference](#reference) )
 
 
 
