@@ -10,7 +10,7 @@
 * [Numerical Technique](#numerical-technique)
 * [Code Structure](#code-structure)
 * [Examples](#examples)
-* [Reference](#reference)
+* [References](#references)
 
 
 
@@ -26,7 +26,7 @@ And Fourier Transform parameter `order` ( ~ number of epicycles ) controls the p
 
 <img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-3.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-4.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-5.jpg" width="200">
 
-( More in [Reference](#reference) )
+( More in [References](#references) )
 
 
 
@@ -172,7 +172,7 @@ pip install -r requirements.txt
 
 
 
-## Reference
+## References
 
 1. [Fourier series videos by 3B1B](https://www.youtube.com/watch?v=r6sGWTCMz2k) my motivation for this project
 
