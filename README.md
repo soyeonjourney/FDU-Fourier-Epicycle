@@ -77,7 +77,7 @@ pip install -r requirements.txt
 
      * `fft` : Use built-in FFT
    
-     * `mydft `: Use DFT
+     * `mydft` : Use DFT
    
      * `myfft` : Use linear interpolation & power-2 FFT
    
