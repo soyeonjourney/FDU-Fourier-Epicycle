@@ -16,7 +16,7 @@
 
 ## Introduction
 
-This project is a Fourier Epicycle generator based on numerical algorithms, i.e. Fourier Transform, interpolation, etc.
+This project is a Fourier Epicycle generator based on numerical algorithms, like Fourier Transform, interpolation, etc.
 
 Drawing with time-axis is visualized as follows.
 
@@ -129,7 +129,6 @@ pip install -r requirements.txt
   
   ![equation-4](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/equation-4.png)
   
-  
 * #### Interpolation
 
   DFT is easy to implement but not so efficient, while power-2 FFT is relatively efficient but limited, for it only works when the number of sampling points is power of two.
@@ -179,5 +178,4 @@ pip install -r requirements.txt
 2. [Fourier Transform videos by 3B1B](https://www.youtube.com/watch?v=spUNpyF58BY) beautiful understanding on Fourier Transform
 
 3. [An Interactive Introduction to Fourier Transforms](https://www.jezzamon.com/fourier/index.html) helps a lot
-
 
