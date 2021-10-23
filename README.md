@@ -16,7 +16,7 @@
 
 ## Introduction
 
-This project is a Fourier Epicycle generator based on numerical algorithms, like Fourier Transform, interpolation, etc.
+This repo includes Fourier Epicycle generator, the final project in Numerical Algorithms with Case Studies II course (DATA130010.01) in School of Data Science @Fudan University.
 
 Drawing with time-axis is visualized as follows.
 
