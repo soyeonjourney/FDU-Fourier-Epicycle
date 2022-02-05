@@ -1,7 +1,5 @@
 <h1 align = "center">Fourier Epicycle</h1>
 
-
-
 ## Contents
 
 * [Introduction](#introduction)
@@ -11,8 +9,6 @@
 * [Code Structure](#code-structure)
 * [Examples](#examples)
 * [References](#references)
-
-
 
 ## Introduction
 
@@ -27,8 +23,6 @@ And Fourier Transform parameter `order` ( ~ number of epicycles ) controls the p
 <img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-3.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-4.jpg" width="200"><img src="https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/intro-5.jpg" width="200">
 
 ( More in [References](#references) )
-
-
 
 ## Prerequisites
 
@@ -46,8 +40,6 @@ Install requirements with:
 ```powershell
 pip install -r requirements.txt
 ```
-
-
 
 ## Usage
 
@@ -95,8 +87,6 @@ pip install -r requirements.txt
 
 5. Finally see your output at `/output/`
 
-
-
 ## Numerical Technique
 
 * #### Fourier Series
@@ -112,8 +102,6 @@ pip install -r requirements.txt
   ( In this project, we set  ![tinI](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/tinI.png) )
 
   By this, we can decompose a periodic function into the sum of exponential terms, and thus implementing FFT helps constructing code.
-
-  
 
 * #### Fast Fourier Transform
 
@@ -135,13 +123,9 @@ pip install -r requirements.txt
 
   So how to solve this problem? Actually it's almost impossible to get ![N=2^n](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/N=2^n.png), we use interpolations, in this project, linear interpolation & periodic cubic spline interpolation are implemented, because the complex function ![f](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/f.png) is periodic and the distance between each two sampling points won't be so long.
 
-  
-
 * #### 2-D information
 
   This is trivial, just converted 2-D coordinates ![(x,y)](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/(x,y).png) into one complex number like ![x+iy](https://github.com/Tequila-Sunrise/Image-Hosting/blob/main/Fourier-Epicycle/x+iy.png).
-
-
 
 ## Code Structure
 
@@ -163,13 +147,9 @@ pip install -r requirements.txt
 
 * `draw_epicycle_animation.py` : Main function to generate the animation
 
-
-
 ## Examples
 
 [![example](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/example/bird/fourier-epicycle.gif)](https://github.com/Tequila-Sunrise/Fourier-Epicycle/blob/main/example/bird/fourier-epicycle.mp4)
-
-
 
 ## References
 
